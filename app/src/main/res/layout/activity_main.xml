@@ -4,69 +4,90 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/background_dark">
+    android:background="@drawable/grass_bg">   <!-- или @drawable/gradient_bg, если нет текстуры -->
 
     <TextView
         android:id="@+id/tv_coins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Монеты: 0"
-        android:textSize="28sp"
-        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"/>
+        android:background="@drawable/frame_wood"
+        android:padding="10dp"
+        android:text="Монеты: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
 
     <Button
-    android:id="@+id/btn_click"
-    android:layout_width="200dp"
-    android:layout_height="200dp"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginTop="40dp"
-    android:background="@drawable/btn_diamond"
-    android:text="Добыть!"
-    android:textColor="#FFFFFF"
-    android:textSize="28sp"
-    android:textStyle="bold"
-    android:shadowColor="#000000"
-    android:shadowDx="2"
-    android:shadowDy="2"
-    android:shadowRadius="3" />
+        android:id="@+id/btn_click"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_diamond"
+        android:text="Добыть!"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
 
     <TextView
         android:id="@+id/tv_stats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="За клик: +1 | Авто: +0/сек"
-        android:textSize="18sp"
-        android:textColor="@android:color/white"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="За клик: +1 | Авто: +0/сек"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
 
     <Button
         android:id="@+id/btn_upgrade_click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:background="@drawable/btn_wood"
         android:text="Улучшить клик (сила +1)\nЦена: 10 монет"
-        android:textSize="18sp"/>
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
 
     <Button
         android:id="@+id/btn_upgrade_auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@android:color/holo_green_dark"
+        android:background="@drawable/btn_wood"
         android:text="Автокликер +1/сек\nЦена: 100 монет"
-        android:textSize="18sp"/>
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
 
-    <!-- Заглушка рекламы -->
+    <!-- Заглушка рекламы (можно оставить или убрать) -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="В игре присутствует реклама"
         android:textColor="@android:color/darker_gray"
-        android:gravity="center"/>
+        android:gravity="center" />
 
 </LinearLayout>
