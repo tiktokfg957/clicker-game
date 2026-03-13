@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:id="@+id/tv_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Монеты: 0"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="ТАП!"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="За клик: +1 | Авто: +0/сек"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_upgrade_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Улучшить клик (сила +1)\nЦена: 10 монет"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_upgrade_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Автокликер +1/сек\nЦена: 100 монет"
+        android:textSize="18sp"/>
+
+    <!-- Заглушка рекламы -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="В игре присутствует реклама"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"/>
+
+</LinearLayout>
